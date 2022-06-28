@@ -7,7 +7,7 @@ require('dotenv').config()
 
 let dbConnectionString = process.env.DB_STRING
 
-MongoClient.connect(dbConnectionString)
+MongoClient.connect('mongodb+srv://GabrielRoela:241092@cluster0.3sqzxyt.mongodb.net/?retryWrites=true&w=majority')
 .then(client => {
     console.log('Connected to Database')
     const db = client.db('caloriesCounter')
